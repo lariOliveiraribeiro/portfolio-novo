@@ -1,0 +1,80 @@
+.skills {
+    background-color: #EEEEEE;
+    scroll-margin-top: 10rem; 
+}
+  
+.skills .skills__content {
+    padding: 6rem 4rem;
+    text-align: center;
+    position: relative;
+}
+.skills__track {
+    display: flex;
+    width: max-content;
+    animation: moveLeft 30s linear infinite;
+}
+
+/*  Parar o movimento no hover */
+.skills .skills__content .skills__track:hover {
+    animation-play-state: paused;
+}
+  
+.skills .skills__content .description {
+    max-width: 56rem;
+    margin: 0 auto 5rem;
+}
+  
+.skills .skills__content ul {
+    display: flex; /* Trocar grid por flex */
+    gap: 1rem; /* Espaço entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+.skills .skills__content ul li {
+    flex: 0 0 auto;
+    width: 25rem;
+    height: 25rem;
+    margin-right: 0.2rem;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 3s ease;
+}
+
+.skills .skills__content ul li:hover {
+    transform: scale(1.05); /* Aumenta 10% no hover, parece que "vem pra frente" */
+    z-index: 10;
+}
+.skills .skills__content ul li:hover .image-container {
+    transform: scale(1.2); /* Aumenta a imagem para 120% do seu tamanho */
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0); /* Começa no início */
+    }
+    100% {
+        transform: translateX(-50%); /* Move para a esquerda, mas agora o conteúdo vai duplicado */
+    }
+  }
+.skills .skills__content ul li .image-container {
+    padding: 2rem;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Aplica transição na imagem */
+    transform-origin: center; /* Faz a imagem aumentar a partir do centro */
+}
+  
+.skills .skills__content ul li h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+}
