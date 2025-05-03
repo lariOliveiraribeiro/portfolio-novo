@@ -1,6 +1,7 @@
 .projects {
-    margin-bottom: 16rem;
-    scroll-margin-top: 12rem;
+    margin-bottom: 1rem;
+    scroll-margin-top: 8rem;
+    padding: 8rem;
 }
   
 .projects .projects__content {
@@ -13,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
 }
   
 .projects ul li.projects__reversed-list {
@@ -26,7 +27,7 @@
   
 .projects ul li .image img {
     width: 100%;
-    min-width: 40rem;
+    min-width: 50rem;
     max-width: 47rem;
     height: auto;
 }
@@ -40,6 +41,6 @@
 }
   
 .projects ul li .projects__info a {
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: underline;
 }
