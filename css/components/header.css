@@ -1,54 +1,101 @@
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-    scroll-margin-top:20rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:6rem;
+  margin-bottom: 8rem;
 }
 
-header .header__left{
-    max-width: 62rem;
-    flex: 1;
+header.max-width{
+  display:flex;
 }
 
-header .header__left p{
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    max-width: 50rem;
+header{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
 }
 
-header .header__left .btn:hover {
-    transform: scale(1.08);
-    background-color:#508C9B
+header{
+  max-width:100%;
 }
 
-header .header__right .header__image{
-    position: relative;
-    line-height: 0;
+.header__left{
+  max-width:500px;
+  flex:1;
 }
 
-header .header__right .header__image::after{
-    content: '';
-    display: block;
-    width: 85%;
-    height: 100%;
-    border: 1px solid #508C9B;
-    position: absolute;
-    top:  -1.5rem;
-    border-radius: 0.5rem;
-    z-index: -1;
+.header__left h1{
+  color:#FF0B55;
+  font-size:5.5rem;
 }
 
-header .header__right .header__image .img-larissa{
-    border-radius: 0.5rem;
-    width: 341px;
-    height: 512px;
-    object-fit: contain;
+.hero-line{
+  width:100px;
+  height:2px;
+  background:#FF0B55;
+  margin:10px 0 20px;
+
+  box-shadow:0 0 10px #FF0B55;
 }
 
-header .header__right .header__image .background{
-    position: absolute;
-    top: -4rem;
-    right: -2.5rem;
-    z-index: -1;
+.hero-text{
+  color:#9CA3AF;
+  margin:2rem 0;
+  line-height:2.6rem;
+}
+
+.header__right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.header__right img{
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  object-fit:cover;
+
+  border:2px solid #FF0B55;
+  box-shadow:0 0 25px rgba(255,11,85,0.4);
+}
+
+.btn-hero{
+  display:inline-block;
+  padding:10px 22px;
+  border-radius:30px;
+
+  border:1px solid #333;
+  color:#fff;
+
+  font-size:1.4rem;
+  transition:all .3s ease;
+}
+
+.btn-hero:hover{
+  border-color:#FF0B55;
+  color:#FF0B55;
+
+  transform:scale(1.08);
+
+  box-shadow:0 0 10px #FF0B55;
+}
+
+.btn-hero{
+  background:#0A0A0A;
+}
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    text-align:center;
+    gap:3rem;
+  }
+
+  .hero-line{
+    margin:10px auto 20px;
+  }
+
 }

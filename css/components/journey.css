@@ -1,0 +1,152 @@
+
+.journey{
+  text-align:center;
+  display:block;
+}
+
+.journey-header{
+  text-align:center;
+  margin-bottom:6rem;
+}
+
+.journey .secondary-title::after{
+  content:"";
+  display:block;
+  width:120px;
+  height:2px;
+  background:#FF0B55;
+  margin:20px auto 0;
+  box-shadow:0 0 10px #FF0B55;
+}
+
+.journey .secondary-title{
+  color:#FF0B55;
+  text-align:center;
+}
+
+.timeline{
+  position:relative;
+  max-width:900px;
+  margin:auto;
+}
+
+/* linha central */
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:2px;
+  height:100%;
+  background:#222;
+  transform:translateX(-50%);
+}
+
+/* item */
+
+.timeline-item{
+  width:50%;
+  padding:20px 40px;
+  position:relative;
+}
+
+.timeline-item .tertiary-title{
+  color:#FF0B55;
+}
+
+/* bolinha neon */
+
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  top:20px;
+  width:14px;
+  height:14px;
+  background:#FF0B55;
+  border-radius:50%;
+  box-shadow:0 0 10px #FF0B55;
+}
+
+/* lado esquerdo */
+
+.timeline-item.left{
+  left:0;
+  text-align:right;
+}
+
+.timeline-item.left::before{
+  right:-7px;
+}
+
+/* lado direito */
+
+.timeline-item.right{
+  left:50%;
+  text-align: left;
+}
+
+.timeline-item.right::before{
+  left:-7px;
+}
+
+/* card */
+
+.timeline-item{
+  background:#0A0A0A;
+  border:1px solid #222;
+  border-radius:10px;
+  margin-bottom:40px;
+}
+
+/* hover */
+
+.timeline-item:hover{
+  border-color:#FF0B55;
+  box-shadow:0 0 10px #FF0B55;
+}
+
+.timeline-tech{
+  margin-top:15px;
+}
+
+.timeline-tech span{
+  display:inline-block;
+  padding:6px 12px;
+  border:1px solid #FF0B55;
+  border-radius:20px;
+  font-size:1.2rem;
+  color:#FF0B55;
+  margin:5px;
+}
+
+.timeline-date{
+  color:#FF0B55;
+  font-size:1.3rem;
+  font-weight:500;
+}
+
+.timeline-tech span:hover{
+  box-shadow:0 0 10px #FF0B55;
+}
+
+@media(max-width:768px){
+
+.timeline::before{
+left:10px;
+}
+
+.timeline-item{
+width:100%;
+padding-left:40px;
+}
+
+.timeline-item.right{
+left:0;
+}
+
+.timeline-item::before{
+left:2px;
+}
+
+}
