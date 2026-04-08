@@ -39,26 +39,27 @@
         </ul>
       </div>
   </nav>
-  <!--header-->
-  <header id="header" class="max-width">
+  <header id="header" class="max-width header">
 
-    <div class="header__left">
-      <h1>Larissa Ribeiro</h1>
-      <div class="hero-line"></div>
+  <!-- FUNDO INTERATIVO -->
+  <div id="particles-js"></div>
 
-      <h2>Desenvolvedora Backend em formação</h2>
+  <div class="header__left">
+    <h1>Larissa Oliveira Ribeiro</h1>
+    <div class="hero-line"></div>
 
-      <p class="hero-text">
-        Em transição da engenharia civil para tecnologia,<br>
-        focada no desenvolvimento backend com Java e Spring Boot.
-      </p>
+    <h2>Desenvolvedora em formação</h2>
 
-      <a href="#journey" class="btn-hero">Minha trajetória</a>
-    </div>
-    <div class="header__right">
-      <img src="assets/foto-larissa.jpg" class="img-larissa">
-    </div>
-  </header>
+    <p class="hero-text">
+      Desenvolvedora em formação, com foco em desenvolvimento de software,
+      com experiência em análise de dados e automação de processos.
+    </p>
+
+    <a href="#journey" class="btn-hero">Minha trajetória</a>
+  </div>
+
+</header>
+
   <!--Sobre-->
   <section id="about" class="about max-width">
 
@@ -68,22 +69,15 @@
 
       <div class="about-line"></div>
       <p>
-        Sou formada em Engenharia Civil e atualmente estou em transição para a área de Tecnologia da Informação, com
-        foco no desenvolvimento de software.
+        Sou formada em Engenharia Civil e atualmente estou em transição para a área de Tecnologia da Informação, direcionando minha carreira para desenvolvimento de software.
       </p>
       <p>
-        Atualmente atuo profissionalmente com gestão de projetos e análise de dados, utilizando ferramentas como Excel
-        avançado, automação de planilhas e organização de informações técnicas. Nesse contexto, também participo do
-        treinamento e acompanhamento de estagiários, contribuindo para o desenvolvimento da equipe e a organização das
-        atividades..
+        Atualmente atuo com gestão de projetos e organização de informações, além de trabalhar com análise e automação de dados utilizando Excel e VBA. Também participo do acompanhamento e treinamento de estagiários, o que é algo importante para mim e contribuiu para desenvolver minhas habilidades de comunicação, organização e liderança.
       </p>
       <p>
-        Paralelamente, venho me dedicando aos estudos em programação e ao desenvolvimento de projetos próprios, com foco
-        principalmente em desenvolvimento back-end utilizando Java e Spring Boot, além de tecnologias web como HTML, CSS
-        e JavaScript.
+        Paralelamente, venho me dedicando ao desenvolvimento de projetos próprios, onde aplico programação e boas práticas de software, explorando desenvolvimento de aplicações e conceitos de back-end, além de tecnologias web.
       </p>
-      <p>Este portfólio reúne parte dessa jornada de aprendizado e os projetos que venho desenvolvendo ao longo da minha
-        transição para a área de tecnologia.</p>
+      <p>Este portfólio reúne minha evolução nessa transição, com projetos que refletem meu aprendizado contínuo e meu interesse em construir soluções tecnológicas na prática.</p>
     </div>
   </section>
 
@@ -244,8 +238,7 @@
       <div class="skills-line"></div>
 
       <p class="projects-subtitle">
-        Projetos que demonstram minha evolução no desenvolvimento backend,
-        com foco em APIs, boas práticas e construção de soluções reais.
+        Projetos que demonstram minha evolução no desenvolvimento de software, com foco em aplicações web, boas práticas e soluções reais.
       </p>
 
     </div>
@@ -306,7 +299,32 @@
         </div>
       </div>
 
+
+     <!-- PROJETO 3 -->
+      <div class="project-card">
+
+      <img src="assets/Mycard.jpg" alt="MyCard">
+
+      <div class="project-content">
+
+      <span class="project-category">
+        Frontend / Fullstack
+      </span>
+
+      <h3>MyCard</h3>
+
+      <p>
+        Aplicação web para controle de gastos compartilhados, com filtros dinâmicos e gráficos interativos.
+      </p>
+
+      <div class="project-tech">
+        <span>React</span>
+        <span>Tailwind</span>
+        <span>Recharts</span>
+      </div>
+
     </div>
+  </div>
   </section>
   <!-- Footer -->
   <footer id="footer">
@@ -362,6 +380,38 @@
 
   <!--script-->
   <script src="scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+window.onload = function() {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 70 },
+      color: { value: "#FF0B55" },
+      shape: { type: "circle" },
+      opacity: { value: 0.4 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 140,
+        color: "#FF0B55",
+        opacity: 0.3,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    }
+  });
+};
+</script>
+  
 
 </body>
 
